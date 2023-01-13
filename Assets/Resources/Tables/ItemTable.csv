@@ -1,0 +1,11 @@
+﻿ID,Type,Name,Desc,IconSpriteId
+Axe01,Weapon,ItemAxe01,ItemAxe01Desc,Icons/axe
+Armor01,Armor,ItemArmor01,ItemArmor01Desc,Icons/armor
+Apple01,Consumable,ItemApple01,ItemApple01,Icons/apple
+Sword01,Weapon,ItemSword01,ItemSword01Desc,Icons/sword
+Shoulders,Armor,ItemShoulders,ItemShouldersDesc,Icons/shoulders
+Gem01,Consumable,ItemGem01,ItemGem01Desc,Icons/gem
+Meat01,Consumable,ItemMeat01,ItemMeat01Desc,Icons/meat
+Pants01,Armor,Itempants01,Itempants01Desc,Icons/pants
+Rings01,Armor,ItemRing01,ItemRings01Desc,Icons/rings
+Scroll01,Consumable,ItemScroll01,ItemScroll01Desc,Icons/scroll
