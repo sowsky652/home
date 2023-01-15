@@ -12,6 +12,7 @@ public class UISlot : MonoBehaviour
     public ItemData Data
     {
         get => data;
+        set { data = value; }
     }
     public void SetEmpty()
     {

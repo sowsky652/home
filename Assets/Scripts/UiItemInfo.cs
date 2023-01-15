@@ -29,9 +29,11 @@ public class UiItemInfo : MonoBehaviour
             SetEmpty();
             return;
         }
-
-        image.sprite = data.IconSprite;
         itemName.text = data.name;
         itemDesc.text = data.desc;
+        if (data.IconSprite != null)
+            Debug.Log($"{data.IconSprite}");
+            //image.sprite = data.IconSprite;
+
     }
 }
