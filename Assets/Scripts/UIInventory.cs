@@ -49,16 +49,16 @@ public class UIInventory : MonoBehaviour
 
     public void NameAscending()
     {
-        for (int i = 0; i < haveCount-1; i++)
+        for (int i = 0; i < haveCount - 1; i++)
         {
-            for (int j = 0; j < haveCount-1; j++)
+            for (int j = 0; j < haveCount - 1; j++)
             {
-                if (slotList[i].Data.id.CompareTo(slotList[j+1].Data.id)>0 )
+                if (slotList[i].Data.id.CompareTo(slotList[j].Data.id) > 0)
                 {
-                  
-                    var temp = slotList[j].Data;
-                    slotList[j].Data = slotList[j + 1].Data;
-                    slotList[j + 1].Data = temp;
+
+                    var temp = slotList[i].Data;
+                    slotList[i].Set(slotList[j ].Data);
+                    slotList[j].Set(temp);
                 }
             }
         }
@@ -71,12 +71,12 @@ public class UIInventory : MonoBehaviour
         {
             for (int j = 0; j < haveCount-1; j++)
             {
-                if (slotList[i].Data.id.CompareTo(slotList[j + 1].Data.id) < 0)
-                {                   
+                if (slotList[i].Data.id.CompareTo(slotList[j].Data.id) < 0)
+                {
 
-                    var temp = slotList[j].Data;
-                    slotList[j].Data = slotList[j + 1].Data;
-                    slotList[j + 1].Data = temp;
+                    var temp = slotList[i].Data;
+                    slotList[i].Set(slotList[j ].Data);
+                    slotList[j].Set(temp);
                 }
             }
         }
